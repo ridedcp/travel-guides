@@ -1,8 +1,13 @@
-<html lang="es">
-  <body>
-    <h1>Inicio en Español</h1>
-    <p>Esta es tu web bilingüe de viajes.</p>
-    <p><a href="/en/">English</a></p>
-    <p><a href="/es/guias/lisboa-3-dias/">Lisboa – 3 días</a></p>
-  </body>
-</html>
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout lang="es" title="Guías de viaje — ES">
+  <section class="rounded-2xl p-10 bg-gradient-to-br from-pink-500 to-rose-600 text-white">
+    <h1 class="text-4xl font-extrabold">Guías de 3 días</h1>
+    <p class="mt-2 opacity-90">Guías prácticas y bilingües para Europa y América.</p>
+  </section>
+
+  <div class="mt-8">
+    <a class="text-pink-600 underline" href="/es/guias/lisboa-3-dias/">Lisboa – 3 días</a>
+  </div>
+</BaseLayout>
