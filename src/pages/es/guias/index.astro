@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import GuideCard from '../../../components/GuideCard.astro';
+
+const guias = (await Astro.glob('./*.mdx'))
+  .map(({ url, frontmatter }) => ({ url, ...frontmatter }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+---
+<BaseLayout lang="es" title="Guías de viaje — ES">
+  <section class="rounded-3xl bg-gradient-to-br from-pink-500 to-rose-600 p-10 text-white">
+    <h1 class="text-4xl font-extrabold">Guías de viaje</h1>
+    <p class="mt-2 opacity-90">Europa y América</p>
+  </section>
+
+  <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {guias.map(g => (
+      <GuideCard href={g.url} title={g.title} description={g.description} coverImage={g.coverImage} tags={g.tags} />
+    ))}
+  </div>
+</BaseLayout>
