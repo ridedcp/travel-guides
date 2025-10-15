@@ -1,0 +1,24 @@
+---
+const { title = "Travel Guides", lang = "en" } = Astro.props;
+---
+<html lang={lang} class="min-h-full">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+    <header class="mx-auto max-w-5xl px-4 py-6 flex items-center justify-between">
+      <a href="/" class="text-2xl font-bold">TourPaths</a>
+      <nav class="text-sm space-x-4">
+        <a href="/en/" class="underline">EN</a>
+        <a href="/es/" class="underline">ES</a>
+      </nav>
+    </header>
+    <main class="mx-auto max-w-5xl px-4 py-8">
+      <slot />
+    </main>
+    <footer class="mx-auto max-w-5xl px-4 py-10 text-sm text-slate-500">
+      © {new Date().getFullYear()} · Travel Guides
+    </footer>
+  </body>
+</html>
