@@ -1,8 +1,13 @@
-<html lang="en">
-  <body>
-    <h1>English home</h1>
-    <p>This is your bilingual travel site.</p>
-    <p><a href="/es/">Español</a></p>
-    <p><a href="/en/guides/lisbon-3-days/">Lisbon – 3 days</a></p>
-  </body>
-</html>
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+<BaseLayout lang="en" title="Travel Guides — EN">
+  <section class="rounded-2xl p-10 bg-gradient-to-br from-teal-500 to-blue-600 text-white">
+    <h1 class="text-4xl font-extrabold">3-day travel guides</h1>
+    <p class="mt-2 opacity-90">Practical, bilingual guides for Europe & the Americas.</p>
+  </section>
+
+  <div class="mt-8">
+    <a class="text-teal-600 underline" href="/en/guides/lisbon-3-days/">Lisbon – 3 days</a>
+  </div>
+</BaseLayout>
