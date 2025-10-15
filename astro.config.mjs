@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
-  output: 'static' // build a /dist static site (perfect for Vercel)
+  integrations: [tailwind()],
+  output: 'static'
 });
