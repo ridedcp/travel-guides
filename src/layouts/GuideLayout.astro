@@ -1,0 +1,53 @@
+---
+import '../styles/tailwind.css';
+import AdSlot from '../components/AdSlot.astro';
+
+const {
+  title = 'Travel Guide',
+  description = '',
+  lang = 'en',
+  coverImage = '',
+  coverAlt = title,
+  tags = [],
+} = Astro.props;
+---
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body class="bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+    <header class="mx-auto max-w-6xl px-4 py-6 flex items-center justify-between">
+      <a href="/" class="text-2xl font-extrabold">TourPaths</a>
+      <nav class="text-sm space-x-4">
+        <a href="/en/" class="underline">EN</a>
+        <a href="/es/" class="underline">ES</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="relative mx-auto max-w-6xl px-4">
+      <div class="overflow-hidden rounded-3xl">
+        <img src={coverImage} alt={coverAlt} class="h-72 w-full object-cover" />
+      </div>
+      <div class="mt-6">
+        <h1 class="text-4xl font-extrabold">{title}</h1>
+        {description && <p class="mt-2 text-lg text-slate-600 dark:text-slate-300">{description}</p>}
+        {tags.length > 0 && (
+          <div class="mt-3 flex flex-wrap gap-2">
+            {tags.map((t) => <span class="px-3 py-1 rounded-full text-sm bg-teal-100 text-teal-800 dark:bg-teal-900/40 dark:text-teal-300">{t}</span>)}
+          </div>
+        )}
+      </div>
+    </section>
+
+    <main class="mx-auto max-w-3xl px-4 py-10 prose prose-slate dark:prose-invert lg:prose-lg">
+      <slot />
+    </main>
+
+    <footer class="mx-auto max-w-6xl px-4 py-12 text-sm text-slate-500">
+      © {new Date().getFullYear()} · Travel Guides
+    </footer>
+  </body>
+</html>
