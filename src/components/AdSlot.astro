@@ -1,0 +1,10 @@
+---
+const { variant = 'in-content' } = Astro.props;
+const sizes = {
+  'in-content': 'min-h-[120px]',
+  'in-list': 'min-h-[120px]',
+};
+---
+<div class={`my-8 w-full rounded-xl border border-dashed border-slate-300 bg-slate-100 text-slate-500 grid place-items-center ${sizes[variant]}`}>
+  <span>Ad placeholder — {variant}</span>
+</div>
