@@ -1,0 +1,38 @@
+---
+title: "Qué hacer en Lisboa en 3 días"
+description: "Plan práctico de 3 días en Lisboa: qué ver, mejor época y presupuesto diario orientativo."
+tags: ["europa","portugal","escapada"]
+---
+
+# Qué hacer en Lisboa en 3 días
+
+## Resumen rápido
+¿Vas a Lisboa? Aquí tienes un plan de tres días con lo imprescindible, la mejor época para ir y un presupuesto diario aproximado.
+
+## Top 5 lugares que no te puedes perder
+1. Castelo de São Jorge — vistas panorámicas desde lo alto.  
+2. Torre de Belém — icono a orillas del Tajo; prueba los pastéis.  
+3. Monasterio de los Jerónimos — joya del estilo manuelino.  
+4. Alfama — piérdete por sus callejuelas y miradores.  
+5. LX Factory — zona moderna con comida y diseño.
+
+## Cuándo ir
+Mejor época: **mayo–junio** y **septiembre–octubre** por clima suave y menos masificación.
+
+## Costes diarios (orientativos)
+- Alojamiento (media gama): ~80€  
+- Comidas: ~25–35€  
+- Transporte/día: ~6€  
+- Extras: 10–20€
+
+<!-- ADSENSE_BREAK_1 -->
+
+## Esquema día a día
+**Día 1:** Alfama + Castillo + mirador al atardecer  
+**Día 2:** Belém (Torre, Monasterio) + paseo junto al río  
+**Día 3:** Museos o excursión (Sintra o Cascais)
+
+<!-- ADSENSE_BREAK_2 -->
+
+## Consejos prácticos
+Tarjeta contactless en transporte, calzado cómodo (cuestas), reserva con antelación lo popular.
