@@ -1,14 +1,44 @@
 ---
-const title = "Travel Guides";
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>{title}</title>
-  </head>
-  <body>
-    <h1>Hello from Astro 👋</h1>
-    <p>This is your minimal Astro site.</p>
-    <p><a href="/en/">English</a> · <a href="/es/">Español</a></p>
-  </body>
-</html>
+<BaseLayout lang="en" title="Travel Guides">
+  <section class="relative overflow-hidden rounded-3xl">
+    <img
+      src="https://images.unsplash.com/photo-1505764706515-aa95265c5abc?w=2000&q=80&auto=format&fit=crop"
+      alt="Ocean cliff view at sunset"
+      class="h-[60vh] w-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-tr from-teal-600/70 via-blue-700/40 to-transparent"></div>
+
+    <div class="absolute inset-0 flex items-center">
+      <div class="mx-auto max-w-5xl px-6">
+        <h1 class="text-4xl font-extrabold text-white drop-shadow-lg sm:text-5xl">
+          Bilingual 3-day travel guides
+        </h1>
+        <p class="mt-3 max-w-2xl text-white/90">
+          Europe & the Americas · photos, vivid colors, practical tips.
+        </p>
+
+        <div class="mt-8 flex gap-3">
+          <a href="/en/" class="rounded-xl bg-white/90 px-5 py-3 font-semibold text-slate-900 shadow hover:bg-white">
+            English
+          </a>
+          <a href="/es/" class="rounded-xl bg-slate-900/70 px-5 py-3 font-semibold text-white shadow hover:bg-slate-900/90">
+            Español
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mt-8 grid gap-4 sm:grid-cols-2">
+    <a href="/en/guides/" class="rounded-2xl bg-gradient-to-br from-teal-500 to-blue-600 p-6 text-white shadow hover:shadow-lg">
+      <h2 class="text-2xl font-bold">Explore guides (EN)</h2>
+      <p class="opacity-90">Cities, best months, costs, day-by-day.</p>
+    </a>
+    <a href="/es/guias/" class="rounded-2xl bg-gradient-to-br from-pink-500 to-rose-600 p-6 text-white shadow hover:shadow-lg">
+      <h2 class="text-2xl font-bold">Explorar guías (ES)</h2>
+      <p class="opacity-90">Ciudades, mejor época, costes y planes.</p>
+    </a>
+  </div>
+</BaseLayout>
